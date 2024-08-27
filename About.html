@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Mighty Mac Carpet Cleaning & Restoration</title>
+    <link rel="icon" type="favicon"
+        href="https://mightymacrochester.com/wp-content/uploads/2023/02/cropped-Mighty-Mac-_7-1-300x300.png?crop=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="description"
+        content="Need a carpet cleaner in Rochester, NY? Choose Mighty Mac for expert carpet cleaning services that will make your carpets look like new.">
+    <!-- <link rel="canonical" href="https://617-boston-mover.blogspot.com/"> -->
+    <style>
+        /* Base styles */
+        html,
+        body {
+            background-color: #FFFFFF;
+            transition: all 0.3s;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            text-align: justify;
+            /* Add this line to justify the text */
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #38761D;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 999;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            max-height: 40px;
+            margin-right: 10px;
+        }
+
+        .website-name {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links li {
+            margin-left: 20px;
+        }
+
+        nav a {
+            color: inherit;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #7096c5;
+        }
+
+        /* Mobile Menu Styles */
+        .mobile-menu-icon {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            right: 0;
+            top: 100%;
+            background-color: #38761D;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #38761D;
+        }
+
+        /* Hero Section Styles */
+        .hero {
+            margin-top: 70px;
+            position: relative;
+            background-image: url('https://lh3.googleusercontent.com/p/AF1QipPyBcUNH6uTqH6uw-pEwSVYKFibMakgLTPEW0W3=s1360-w1360-h1020');
+            background-size: cover;
+            background-position: center top;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+            z-index: 1;
+        }
+
+        .hero h1,
+        .hero button {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .hero button {
+            background-color: #7A841E;
+            color: #fff;
+            border: none;
+            padding: 12px 24px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Hero Section Styles */
+        @media screen and (max-width: 768px) {
+            .hero {
+                margin-top: 70px;
+                /* Adjust if necessary */
+            }
+        }
+
+        /* Main Content Styles */
+        .container {
+            max-width: 900px;
+            /* Increased width */
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .image-container {
+            flex: 0 0 30%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .content-wrapper {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .content {
+            flex: 0 0 65%;
+        }
+
+        /* Google Maps Styles */
+        .google-maps-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .google-maps {
+            flex: 1;
+            max-width: 400px;
+            height: 300px;
+            margin: 0 auto;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            color: #333;
+            font-size: 26px;
+        }
+
+        .section h3 {
+            color: #333;
+        }
+
+        .line {
+            width: 100%;
+            height: 1px;
+            background-color: #ccc;
+            margin: 20px 0;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #38761D;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footerContainer {
+            width: 100%;
+            padding: 70px 30px 20px;
+        }
+
+        .socialIcons {
+            display: flex;
+            justify-content: center;
+        }
+
+        .socialIcons a {
+            text-decoration: none;
+            padding: 10px;
+            background-color: white;
+            margin: 10px;
+            border-radius: 50%;
+        }
+
+        .socialIcons a i {
+            font-size: 2em;
+            color: black;
+            opacity: 0.9;
+        }
+
+        .socialIcons a:hover {
+            background-color: rgba(51, 51, 51, 0.966);
+            transition: 0.5s;
+        }
+
+        .socialIcons a:hover i {
+            color: white;
+            transition: 0.5s;
+        }
+
+        .find-us-online h2 {
+            margin-bottom: 20px;
+        }
+
+        .online-links {
+            list-style: square;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+
+        }
+
+        .online-links li {
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .online-links a {
+            color: #007bff;
+            text-decoration: none;
+            word-break: break-all;
+        }
+
+        .online-links a:hover {
+            text-decoration: underline;
+        }
+
+        @media screen and (max-width: 768px) {
+            .find-us-online h2 {
+                font-size: 24px;
+            }
+
+            .online-links {
+                align-items: flex-start;
+            }
+
+            .online-links li {
+                text-align: left;
+            }
+        }
+
+        /* Responsive Styles */
+        @media screen and (max-width: 768px) {
+
+
+            .content-wrapper {
+                flex-direction: column;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .mobile-menu-icon {
+                display: block;
+            }
+
+            .dropdown-content.show {
+                display: block;
+            }
+
+            .content,
+            .image-container {
+                flex: 0 0 100%;
+            }
+
+            .image-container {
+                margin-top: 20px;
+            }
+
+        }
+
+        @media screen and (max-width: 480px) {
+            .hero h1 {
+                font-size: 28px;
+            }
+
+            body {
+                font-size: 14px;
+            }
+
+            h2 {
+                font-size: 22px;
+            }
+
+            h3 {
+                font-size: 18px;
+            }
+
+            .website-name {
+                font-size: 15px;
+                text-align: left;
+            }
+
+            @media screen and (max-width: 768px) {
+
+                .content,
+                .image-container {
+                    flex: 0 0 100%;
+                }
+
+                .image-container {
+                    margin-top: 20px;
+                    display: flex;
+                    justify-content: center;
+                    /* Center the image horizontally */
+                }
+
+                .image-container img {
+                    width: 60%;
+                    /* Adjust the percentage to control the image size */
+                    height: auto;
+                    /* Maintain the aspect ratio */
+                    max-width: 350px;
+                    /* Optional: set a max-width to limit the size */
+                }
+            }
+
+            .online-links {
+                list-style: square;
+                padding: 0;
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .online-links li {
+                margin-bottom: 10px;
+                text-align: center;
+            }
+
+            .online-links a {
+                color: #007bff;
+                text-decoration: none;
+                word-break: break-all;
+            }
+        }
+
+
+
+        body {
+            overflow-x: hidden;
+        }
+
+        @media screen and (max-width: 768px) {
+            .container {
+                padding: 20px 10px;
+                width: 100%;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+
+            .google-drawing iframe,
+            .google-docs iframe,
+            .google-slides iframe,
+            .google-calendar iframe {
+                width: 100%;
+                height: 300px;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .image-container img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+
+        /* YouTube Link Styles */
+        .youtube-link {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .youtube-link iframe {
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header">
+        <div class="logo-container">
+            <div class="logo">
+                <img src="https://mightymacrochester.com/wp-content/uploads/brizy/imgs/Mighty-Mac-_7-344x246x0x47x344x151x1714596812.png"
+                    alt="Mighty Mac Carpet Cleaning & Restoration">
+            </div>
+            <div class="website-name">Mighty Mac Carpet Cleaning & Restoration</div>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#home">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <div class="mobile-menu-icon">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="dropdown-content">
+                <a href="index.html">Home</a>
+                <a href="#home">About Us</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+        </nav>
+    </header>
+    <div class="hero">
+        <h1>Mighty Mac Carpet Cleaning & Restoration</h1>
+        <a href="tel:+15855145150"><button>Call Now</button></a>
+    </div>
+
+        <div class="container">
+            <div class="section">
+                <br>
+                <p>Mighty Mac Carpet Cleaning & Restoration is a family-owned and operated business, led by Rochester
+                    locals with a background in decorating and flooring. When you choose us, you’re joining the Mighty
+                    Mac family, and we care for your home as if it were our own. We provide affordable carpet cleaning,
+                    flexible scheduling, and exceptional service, using only 100% organic and safe products because we
+                    understand the importance of family and pets. Give us a call today and become a part of the Mighty
+                    Mac family!</p>
+                <div class="line"></div>
+            </div>
+
+
+
+            <div class="container">
+                <h2 style=" color: #38761D; font-size: 30px;">Find Us online at</h2>
+                <ul class="online-links">
+                    <li><a
+                            href="https://www.facebook.com/MightyMacRochester/">https://www.facebook.com/MightyMacRochester/</a>
+                    </li>
+                    <li><a
+                            href="https://www.instagram.com/mightymacrochester/">https://www.instagram.com/mightymacrochester/</a>
+                    </li>
+                    <li><a
+                            href="https://www.linkedin.com/company/mightymacrochester/">https://www.linkedin.com/company/mightymacrochester/</a>
+                    </li>
+                    <li><a
+                            href="https://www.yelp.com/biz/mighty-mac-carpet-cleaning-rochester">https://www.yelp.com/biz/mighty-mac-carpet-cleaning-rochester</a>
+                    </li>
+                    <li><a
+                            href="https://www.bing.com/maps?osid=fc4c5249-7276-4829-9c2b-dbca94fb284f">https://www.bing.com/maps?osid=fc4c5249-7276-4829-9c2b-dbca94fb284f</a>
+                    </li>
+                    <li><a
+                            href="https://www.classifiedads.com/cleaning/53271585b3db6">https://www.classifiedads.com/cleaning/53271585b3db6</a>
+                    </li>
+                    <li><a
+                            href="https://www.surfyourtown.com/united-states/rochester/home-services/mighty-mac-carpet-cleaning-restoration">https://www.surfyourtown.com/united-states/rochester/home-services/mighty-mac-carpet-cleaning-restoration</a>
+                    </li>
+                    <li><a
+                            href="https://citysquares.com/b/mighty-mac-carpet-cleaning-llc-24639160">https://citysquares.com/b/mighty-mac-carpet-cleaning-llc-24639160</a>
+                    </li>
+                    <li><a
+                            href="https://us.enrollbusiness.com/BusinessProfile/5728769">https://us.enrollbusiness.com/BusinessProfile/5728769</a>
+                    </li>
+                    <li><a
+                            href="https://www.provenexpert.com/mighty-mac-carpet-cleaning-llc/">https://www.provenexpert.com/mighty-mac-carpet-cleaning-llc/</a>
+                    </li>
+                    <li><a href="https://www.dibiz.com/info-3061">https://www.dibiz.com/info-3061</a></li>
+                    <li><a
+                            href="https://smallbusinessusa.com/listing/mighty-mac-carpet-cleaning-restoration.html">https://smallbusinessusa.com/listing/mighty-mac-carpet-cleaning-restoration.html</a>
+                    </li>
+                    <li><a href="https://issuu.com/mightymaccarpet1">https://issuu.com/mightymaccarpet1</a></li>
+                    <li><a
+                            href="https://www.zeemaps.com/map?group=4961617">https://www.zeemaps.com/map?group=4961617</a>
+                    </li>
+                    <li><a
+                            href="https://bizidex.com/en/mighty-mac-carpet-cleaning-restoration-carpet-floor-514435">https://bizidex.com/en/mighty-mac-carpet-cleaning-restoration-carpet-floor-514435</a>
+                    </li>
+                    <li><a
+                            href="https://cally.com/event/availability/pexg9yk8xtinu39a">https://cally.com/event/availability/pexg9yk8xtinu39a</a>
+                    </li>
+                    <li><a
+                            href="https://pr.business/mighty-mac-carpet-cleaning-and-restoration-rochester-new-york">https://pr.business/mighty-mac-carpet-cleaning-and-restoration-rochester-new-york</a>
+                    </li>
+                    <li><a
+                            href="https://local.gocommercially.com/rochester/home-services/mighty-mac-carpet-cleaning-restoration">https://local.gocommercially.com/rochester/home-services/mighty-mac-carpet-cleaning-restoration</a>
+                    </li>
+                    <li><a
+                            href="https://www.fixerhub.com/united-states/rochester-new-york/home-service/mighty-mac-carpet-cleaning-restoration">https://www.fixerhub.com/united-states/rochester-new-york/home-service/mighty-mac-carpet-cleaning-restoration</a>
+                    </li>
+                    <li><a
+                            href="https://www.brownbook.net/business/52601024/mighty-mac-carpet-cleaning-restoration/">https://www.brownbook.net/business/52601024/mighty-mac-carpet-cleaning-restoration/</a>
+                    </li>
+                    <li><a
+                            href="https://www.hotfrog.com/company/200f0671ab7aba7a27de3a31d50c7709/mighty-mac-carpet-cleaning-restoration/rochester/cleaning-services">https://www.hotfrog.com/company/200f0671ab7aba7a27de3a31d50c7709/mighty-mac-carpet-cleaning-restoration/rochester/cleaning-services</a>
+                    </li>
+                    <li><a
+                            href="https://www.quora.com/profile/Mighty-Mac-Carpet-Cleaning-and-Restoration">https://www.quora.com/profile/Mighty-Mac-Carpet-Cleaning-and-Restoration</a>
+                    </li>
+                    <li><a
+                            href="https://www.callupcontact.com/b/businessprofile/Mighty_Mac_Carpet_Cleaning_amp_Restoration/9002060">https://www.callupcontact.com/b/businessprofile/Mighty_Mac_Carpet_Cleaning_amp_Restoration/9002060</a>
+                    </li>
+                    <li><a
+                            href="https://www.techdirectory.io/rochester-new-york-ny/home-services/mighty-mac-carpet-cleaning-restoration">https://www.techdirectory.io/rochester-new-york-ny/home-services/mighty-mac-carpet-cleaning-restoration</a>
+                    </li>
+                    <li><a
+                            href="https://www.startus.cc/company/mighty-mac-carpet-cleaning-restoration">https://www.startus.cc/company/mighty-mac-carpet-cleaning-restoration</a>
+                    </li>
+                    <li><a
+                            href="https://foursquare.com/v/mighty-mac-carpet-cleaning--restoration/66101761a4c1f1180fa8e3cb">https://foursquare.com/v/mighty-mac-carpet-cleaning--restoration/66101761a4c1f1180fa8e3cb</a>
+                    </li>
+                    <li><a
+                            href="https://globalcatalog.com/mightymaccarpetcleaningrestoration.us">https://globalcatalog.com/mightymaccarpetcleaningrestoration.us</a>
+                    </li>
+                    <li><a
+                            href="http://www.askmap.net/location/6877008/united-states/mighty-mac-carpet-cleaning-restoration">http://www.askmap.net/location/6877008/united-states/mighty-mac-carpet-cleaning-restoration</a>
+                    </li>
+                    <li><a
+                            href="https://www.2findlocal.com/b/15159071/mighty-mac-carpet-cleaning-restoration-rochester">https://www.2findlocal.com/b/15159071/mighty-mac-carpet-cleaning-restoration-rochester</a>
+                    </li>
+                    <li><a
+                            href="https://www.cityfos.com/company/Mighty-Mac-Carpet-Cleaning-in-Rochester-NY-23008982.htm">https://www.cityfos.com/company/Mighty-Mac-Carpet-Cleaning-in-Rochester-NY-23008982.htm</a>
+                    </li>
+                    <li><a
+                            href="https://www.find-us-here.com/businesses/Mighty-Mac-Carpet-Cleaning-Restoration-Rochester-New-York-USA/34034658/">https://www.find-us-here.com/businesses/Mighty-Mac-Carpet-Cleaning-Restoration-Rochester-New-York-USA/34034658/</a>
+                    </li>
+                    <li><a
+                            href="https://www.fyple.com/company/mighty-mac-carpet-cleaning-and-restoration-oq1rc53/">https://www.fyple.com/company/mighty-mac-carpet-cleaning-and-restoration-oq1rc53/</a>
+                    </li>
+                    <li><a
+                            href="https://www.n49.com/biz/5912480/mighty-mac-carpet-cleaning-restoration-ny-rochester-95-mt-read-blvd-ste-105b/">https://www.n49.com/biz/5912480/mighty-mac-carpet-cleaning-restoration-ny-rochester-95-mt-read-blvd-ste-105b/</a>
+                    </li>
+                    <li><a
+                            href="https://www.houzz.com/professionals/carpet-and-upholstery-cleaners/mighty-mac-carpet-cleaning-and-restoration-pfvwus-pf~1867367440/__public">https://www.houzz.com/professionals/carpet-and-upholstery-cleaners/mighty-mac-carpet-cleaning-and-restoration-pfvwus-pf~1867367440/__public</a>
+                    </li>
+                    <li><a
+                            href="https://www.a-zbusinessfinder.com/business-directory/Mighty-Mac-Carpet-Cleaning-Restoration-Rochester-New-York-USA/34034658/">https://www.a-zbusinessfinder.com/business-directory/Mighty-Mac-Carpet-Cleaning-Restoration-Rochester-New-York-USA/34034658/</a>
+                    </li>
+                    <li><a
+                            href="https://pro.porch.com/rochester-ny/carpet-cleaners/mighty-mac-carpet-cleaning-and-restoration/pp">https://pro.porch.com/rochester-ny/carpet-cleaners/mighty-mac-carpet-cleaning-and-restoration/pp</a>
+                    </li>
+                    <li><a
+                            href="https://sites.bubblelife.com/community/mighty_mac_carpet_cleaning">https://sites.bubblelife.com/community/mighty_mac_carpet_cleaning</a>
+                    </li>
+                    <li><a
+                            href="https://www.merchantcircle.com/mighty-mac-carpet-cleaning-and-restoration-rochester-ny">https://www.merchantcircle.com/mighty-mac-carpet-cleaning-and-restoration-rochester-ny</a>
+                    </li>
+                    <li><a
+                            href="https://www.manta.com/c/m1wjm5s/mighty-mac-carpet-cleaning-restoration">https://www.manta.com/c/m1wjm5s/mighty-mac-carpet-cleaning-restoration</a>
+                    </li>
+                    <li><a
+                            href="http://www.usnetads.com/view/item-132989914-Mighty-Mac-Carpet-Cleaning-Restoration.html">http://www.usnetads.com/view/item-132989914-Mighty-Mac-Carpet-Cleaning-Restoration.html</a>
+                    </li>
+                    <li><a
+                            href="https://new-york.bizhwy.com/mighty-mac-carpet-cleaning-restoration-id51410.php">https://new-york.bizhwy.com/mighty-mac-carpet-cleaning-restoration-id51410.php</a>
+                    </li>
+                    <li><a
+                            href="https://www.freelistingusa.com/listings/mighty-mac-carpet-cleaning-restoration">https://www.freelistingusa.com/listings/mighty-mac-carpet-cleaning-restoration</a>
+                    </li>
+                    <li><a
+                            href="http://www.hot-web-ads.com/view/item-15598470-Mighty-Mac-Carpet-Cleaning-Restoration.html">http://www.hot-web-ads.com/view/item-15598470-Mighty-Mac-Carpet-Cleaning-Restoration.html</a>
+                    </li>
+                    <li><a
+                            href="https://zaubee.com/biz/mighty-mac-carpet-cleaning-srod4u8z">https://zaubee.com/biz/mighty-mac-carpet-cleaning-srod4u8z</a>
+                    </li>
+                    <li><a
+                            href="https://nextdoor.com/pages/mighty-mac-carpet-cleaning-llc-rochester-ny/">https://nextdoor.com/pages/mighty-mac-carpet-cleaning-llc-rochester-ny/</a>
+                    </li>
+                    <li><a
+                            href="https://opencorporates.com/companies/us_ny/5968049">https://opencorporates.com/companies/us_ny/5968049</a>
+                    </li>
+                    <li><a
+                            href="https://opengovny.com/corporation/5968049">https://opengovny.com/corporation/5968049</a>
+                    </li>
+
+                    <!-- ... other links ... -->
+                </ul>
+            </div>
+            <br>
+            <br>
+
+
+        </div>
+        </div>
+
+        <!-- <div class="section"> -->
+
+
+
+        
+            <footer>
+                <div class="footerContainer">
+                    <div class="socialIcons">
+
+                        <a href="https://www.facebook.com/MightyMacRochester/
+                        "><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/mightymacrochester/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/mightymacrochester/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a
+                            href="https://www.google.com/maps/d/u/0/viewer?mid=1fPP_TUdaMnpUdLCYptqJeV7mSmrOJm4&ll=43.152403199999995%2C-77.66090489999998&z=17"><i
+                                class="fa-brands fa-google-plus"></i></a>
+
+                    </div>
+
+                </div>
+                <p>Copyright &copy;2024 | Mighty Mac Carpet Cleaning & Restoration, 95 Mt Read Blvd ste 105b, Rochester,
+                    NY 14611, United States
+                    +1 (585) 514-5150</p>
+                </div>
+            </footer>
+
+
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const mobileMenuIcon = document.querySelector('.mobile-menu-icon');
+                const dropdownContent = document.querySelector('.dropdown-content');
+
+                mobileMenuIcon.addEventListener('click', () => {
+                    dropdownContent.classList.toggle('show');
+                });
+
+                // Close the dropdown when clicking outside
+                window.addEventListener('click', (e) => {
+                    if (!e.target.matches('.mobile-menu-icon') && !e.target.matches('.fa-bars')) {
+                        dropdownContent.classList.remove('show');
+                    }
+                });
+            });
+
+            window.addEventListener('scroll', function () {
+                var header = document.getElementById('header');
+                header.classList.toggle('scrolled', window.pageYOffset > 0);
+            });
+        </script>
+
+</body>
+
+</html>
